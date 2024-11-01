@@ -1,0 +1,135 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Pantalla de carga */
+.loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeOut 1.5s ease-out forwards;
+}
+
+/* Encabezado y Menú Principal */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.main-menu ul li {
+    margin: 0 1rem;
+}
+
+.main-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.whatsapp-link {
+    background-color: #25D366;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Sección de Productos */
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.producto-categoria {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem;
+}
+
+.producto-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.producto-item img {
+    max-width: 80%;
+    border-radius: 5px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Sección de contacto y redes sociales */
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+}
+
+footer h3 {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.redes-sociales a i {
+    margin-right: 0.5rem;
+}
+
+/* Animación */
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+/* Logo en el encabezado */
+header .logo {
+    width: 80px; /* Ajusta según el tamaño deseado */
+    height: auto;
+}
+
+/* Logo en la pantalla de carga */
+.loading-screen .loading-logo {
+    width: 150px; /* Ajusta según el tamaño deseado */
+    height: auto;
+    margin-bottom: 1rem;
+}
